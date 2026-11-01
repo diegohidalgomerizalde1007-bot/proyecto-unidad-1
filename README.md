@@ -7,7 +7,7 @@ mediante el atributo style.
 ## Integrantes
 
 - Diego Hidalgo
-- Nombre de la compañera
+- Brenda Aguirre
 
 ## Páginas
 
