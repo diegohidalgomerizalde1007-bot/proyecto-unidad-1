@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulario académico de descarga de Embarcadero Dev-C++.">
+        <title>Descarga de Dev-C++ | Proyecto académico</title>
+        <link rel="icon" type="image/png" href="img/icono-embarcadero.png">
+    </head>
+
+    <body style="background-color: #f2f2f2;">
+        <header>
+            <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="200" title="Logo-Embarcadero-descarga"></a>
+            <nav style="text-align: center; background-color: white;">
+                <a href="index.html">Inicio</a>
+                <a href="descarga.html">Descarga</a>
+            </nav>
+        </header>
+        <main>
+            <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
+            <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
+            <form style="background-color: white; width: 90%; max-width: 450px; margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 8px;">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre"placeholder="Escribe tu nombre" minlength="2" maxlength="50"
+                                pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*" title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                    </p>
+                    <p>
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
+                                minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
+                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres." style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo"
+                            placeholder="ejemplo@correo.com" style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                    </p>
+                </fieldset>
+                <p style="text-align: center;">
+                    <input type="submit" value="Enviar" style="background-color: #333333; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">
+    </p>
+            </form>
+        </main>
+        <hr>
+        <footer>
+            <p>Proyecto académico · Fundamentos de Sistemas Web · &copy; 2026</p>
+        </footer>
+    </body>
+</html>
