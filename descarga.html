@@ -46,14 +46,13 @@
                     </p>
                     <p>
                         <label for="telefono">Teléfono:</label><br>
-                        <input type="tel" id="telefono" name="telefono"placeholder="Ejemplo: 0991234567" pattern="[0-9]{10}"
+                        <input type="tel" id="telefono" name="telefono"placeholder="Ejemplo: 0991234567" pattern="[0-9]{7,15}"minlength="7" maxlength="15"
                                 title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."style="width: 100%; padding: 8px; box-sizing: border-box;"required>
                     </p>
 
                     <p>
                         <label for="pais">País:</label><br>
-                        <select id="pais" name="pais"
-                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        <select id="pais" name="pais"style="width: 100%; padding: 8px; box-sizing: border-box;" required>
                             <option value="" selected disabled>Selecciona tu país</option>
                             <option value="EC">Ecuador</option>
                             <option value="CO">Colombia</option>
@@ -64,8 +63,34 @@
                         </select>
                     </p>
                 </fieldset>
+
+        <fieldset style="margin-top: 20px;">
+            <legend>Uso principal de Dev-C++</legend>
+            <p>¿Para qué utilizarás el programa?</p>
+            <p>
+                <input type="radio" id="uso-estudios"name="uso" value="estudios" required>
+                <label for="uso-estudios">Estudios</label><br>
+                <input type="radio" id="uso-trabajo"name="uso" value="trabajo" required>
+                <label for="uso-trabajo">Trabajo</label><br>
+                <input type="radio" id="uso-personal"name="uso" value="personal" required>
+                <label for="uso-personal">Proyectos personales</label>
+            </p>
+        </fieldset>
+    
+        <fieldset style="margin-top: 20px;">
+            <legend>Temas de interés</legend>
+            <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
+            <p>
+                <input type="checkbox" id="interes-c"name="intereses" value="c">
+                <label for="interes-c">Programación en C</label><br>
+                <input type="checkbox" id="interes-cpp"name="intereses" value="cpp">
+                <label for="interes-cpp">Programación en C++</label><br>
+                <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
+                <label for="interes-depuracion">Depuración de programas</label>
+            </p>
+        </fieldset>
                     <p style="text-align: center;">
-                        <input type="submit" value="Enviar" style="background-color: #333333; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">
+                        <input type="submit" value="Enviar" style="background-color: #333232; color: white; padding: 10px 25px;">
                     </p>
             </form>
         </main>
