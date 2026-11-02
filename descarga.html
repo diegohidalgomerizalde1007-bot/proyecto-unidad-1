@@ -90,6 +90,26 @@
             </p>
         </fieldset>
         <fieldset style="margin-top: 20px;">
+            <legend>Preferencias para una práctica</legend>
+
+            <p>Estos datos son opcionales y no reservan una sesión real.</p>
+
+            <p>
+                <label for="programa">Programa de interés:</label><br>
+                <input type="text" id="programa" name="programa"value="Embarcadero Dev-C++" readonly style="width: 100%; padding: 8px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="fecha-practica">Fecha preferida:</label><br>
+                <input type="date" id="fecha-practica" name="fecha_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
+            </p>
+
+            <p>
+                <label for="hora-practica">Hora preferida:</label><br>
+                <input type="time" id="hora-practica" name="hora_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
+            </p>
+        </fieldset>
+        <fieldset style="margin-top: 20px;">
             <legend>Comentarios adicionales</legend>
             <p>
                 <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
@@ -99,11 +119,8 @@
                     style="width: 100%; "></textarea>
         </fieldset>
             <p style="text-align: center;">
-                <input type="submit" value="Enviar"
-                    style="background-color: #333232; color: white; padding: 10px 25px;">
-
-                <input type="reset" value="Restablecer"
-                    style="padding: 10px 25px;">
+                <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
+                <input type="reset" value="Restablecer"style="padding: 10px 25px;">
             </p>
             </form>
         </main>
