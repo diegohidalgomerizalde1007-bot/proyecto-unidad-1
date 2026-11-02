@@ -19,6 +19,7 @@
         <main>
             <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
             <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
+            <!-- Formulario centrado con espacio alrededor -->
             <form style="background-color: white; width: 90%; max-width: 450px; margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 8px;">
                 <fieldset>
                     <legend>Datos personales</legend>
@@ -39,6 +40,7 @@
                         <input type="email" id="correo" name="correo"
                             placeholder="ejemplo@correo.com" style="width: 100%; padding: 8px; box-sizing: border-box;" required>
                     </p>
+                    <!-- Información de empresa y contacto -->
                     <p>
                         <label for="empresa">Empresa o institución:</label><br>
                         <input type="text" id="empresa" name="empresa" placeholder="Escribe tu empresa o institución" maxlength="100"
@@ -49,7 +51,7 @@
                         <input type="tel" id="telefono" name="telefono"placeholder="Ejemplo: 0991234567" pattern="[0-9]{7,15}"minlength="7" maxlength="15"
                                 title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."style="width: 100%; padding: 8px; box-sizing: border-box;"required>
                     </p>
-
+                    <!-- Selección de un país -->
                     <p>
                         <label for="pais">País:</label><br>
                         <select id="pais" name="pais"style="width: 100%; padding: 8px; box-sizing: border-box;" required>
@@ -63,7 +65,7 @@
                         </select>
                     </p>
                 </fieldset>
-
+        <!-- Una sola opción para el uso principal del programa -->
         <fieldset style="margin-top: 20px;">
             <legend>Uso principal de Dev-C++</legend>
             <p>¿Para qué utilizarás el programa?</p>
@@ -76,7 +78,7 @@
                 <label for="uso-personal">Proyectos personales</label>
             </p>
         </fieldset>
-    
+        <!-- Varias opciones para los temas de interés -->
         <fieldset style="margin-top: 20px;">
             <legend>Temas de interés</legend>
             <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
@@ -89,6 +91,7 @@
                 <label for="interes-depuracion">Depuración de programas</label>
             </p>
         </fieldset>
+        <!-- Preferencias opcionales para una práctica del programa -->
         <fieldset style="margin-top: 20px;">
             <legend>Preferencias para una práctica</legend>
 
@@ -109,6 +112,17 @@
                 <input type="time" id="hora-practica" name="hora_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
             </p>
         </fieldset>
+        <!-- Selección opcional de una captura de un ejercicio -->
+        <fieldset style="margin-top: 20px;">
+            <legend>Archivo de ejemplo</legend>
+            <p>
+                <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
+                <input type="file" id="archivo" name="archivo">
+            </p>
+
+            <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
+        </fieldset>
+        <!-- Espacio opcional para consultas o comentarios -->
         <fieldset style="margin-top: 20px;">
             <legend>Comentarios adicionales</legend>
             <p>
@@ -117,6 +131,7 @@
 
             <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
                     style="width: 100%; "></textarea>
+        <!-- Enviar el formulario o recuperar sus valores iniciales -->
         </fieldset>
             <p style="text-align: center;">
                 <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
