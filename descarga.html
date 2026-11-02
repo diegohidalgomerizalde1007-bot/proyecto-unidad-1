@@ -32,9 +32,10 @@
                     </ul>
                 </section>
             <section>
-                <h2 style="text-align: center;">Completa el formulario</h2>
-            <!-- Formulario centrado con espacio alrededor -->
-            <form style="background-color: white; width: 90%; max-width: 450px; margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 8px;">
+                <h2 style="text-align: center;"><i>Completa el formulario</i></h2>
+            <!-- Envío de demostración hacia nuestra misma página -->
+            <form action="descarga.html" method="get" style="background-color: white; width: 90%; max-width: 450px;
+                        margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #685f5f;">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <p>
@@ -145,8 +146,14 @@
 
                     <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
                             style="width: 100%; "></textarea>
-                <!-- Enviar el formulario o recuperar sus valores iniciales -->
+                
                 </fieldset>
+                <p>
+                    Formulario de demostración: al enviar se comprobarán los campos
+                    y se abrirá nuevamente esta página con los datos en la dirección.
+                    No se guardan datos ni se cargan archivos en un servidor.
+                </p>
+                <!-- Enviar el formulario o recuperar sus valores iniciales -->
                     <p style="text-align: center;">
                         <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
                         <input type="reset" value="Restablecer"style="padding: 10px 25px;">
