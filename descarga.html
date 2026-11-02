@@ -16,11 +16,14 @@
                 <a href="descarga.html">Descarga</a>
             </nav>
         </header>
-        <main>
+        <main style="text-align: center;">
             <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
             <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
             <!-- Características que acompañan al formulario de descarga -->
-                <section>
+            <section style="display: inline-block; vertical-align: top;
+                            width: 30%; min-width: 230px; max-width: 100%;
+                            text-align: left;">
+
                     <h2>Lo que obtines con Embarcadero Dev-C++</h2>
                     <ul>
                         <li>Compilador TDM-GCC para 32 y 64 bits.</li>
@@ -30,13 +33,24 @@
                         <li>Completado de código.</li>
                         <li>Creación de bibliotecas estáticas y DLL.</li>
                     </ul>
-                </section>
-            <section>
+            </section>
+            <!-- Formulario a la derecha -->
+            <section style="display: inline-block; vertical-align: top;
+                width: 65%; min-width: 280px; max-width: 100%;
+                text-align: center;">
+
                 <h2 style="text-align: center;"><i>Completa el formulario</i></h2>
             <!-- Envío de demostración hacia nuestra misma página -->
-            <form action="descarga.html" method="get" style="background-color: white; width: 90%; max-width: 450px;
+            <form action="descarga.html" method="get" style="background-color: white; width: 90%; max-width: 1000px;;
                         margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #685f5f;">
-                <fieldset>
+                
+            
+                <!-- Columna de campos obligatorios -->
+                <div style="display: inline-block; vertical-align: top; width: 48%; min-width: 250px; max-width: 100%; text-align: left; box-sizing: border-box; min-width: 0; padding: 5px;">
+
+
+                    <h3>Información obligatoria</h3>
+                    <fieldset>
                     <legend>Datos personales</legend>
                     <p>
                         <label for="nombre">Nombre:</label><br>
@@ -80,7 +94,14 @@
                         </select>
                     </p>
                 </fieldset>
-        <!-- Una sola opción para el uso principal del programa -->
+                </div>
+                <!-- Columna de campos opcionales -->
+                <div style="display: inline-block; vertical-align: top;
+                            width: 48%; min-width: 230px; max-width: 100%;
+                            text-align: left;">
+
+                    <h3>Información opcional</h3>
+                    <!-- Una sola opción para el uso principal del programa -->
                 <fieldset style="margin-top: 20px;">
                     <legend>Uso principal de Dev-C++</legend>
                     <p>¿Para qué utilizarás el programa?</p>
@@ -128,15 +149,15 @@
                     </p>
                 </fieldset>
                 <!-- Selección opcional de una captura de un ejercicio -->
-                <fieldset style="margin-top: 20px;">
+                <fieldset style="margin-top: 20px; width: 100%; box-sizing: border-box; min-width: 0;">
                     <legend>Archivo de ejemplo</legend>
                     <p>
                         <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
-                        <input type="file" id="archivo" name="archivo">
+                        <input type="file" id="archivo" name="archivo" style="max-width: 100%; box-sizing: border-box;">
                     </p>
-
                     <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
                 </fieldset>
+
                 <!-- Espacio opcional para consultas o comentarios -->
                 <fieldset style="margin-top: 20px;">
                     <legend>Comentarios adicionales</legend>
@@ -146,8 +167,10 @@
 
                     <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
                             style="width: 100%; "></textarea>
-                
                 </fieldset>
+                </div>
+
+                <!-- Conserva debajo la explicación del envío y los dos botones -->
                 <p>
                     Formulario de demostración: al enviar se comprobarán los campos
                     y se abrirá nuevamente esta página con los datos en la dirección.
