@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Formulario académico de descarga de Embarcadero Dev-C++.">
-        <title>Descarga de Dev-C++ | Proyecto académico</title>
-        <link rel="icon" type="image/png" href="img/icono-embarcadero.png">
-    </head>
 
-    <body style="background-color: #f2f2f2;">
-        <header>
-            <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="200" title="Logo-Embarcadero-descarga"></a>
-            <nav style="text-align: center; background-color: white;">
-                <a href="index.html">Inicio</a>
-                <a href="descarga.html">Descarga</a>
-            </nav>
-        </header>
-        <main style="text-align: center;">
-            <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
-            <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
-            <!-- Características que acompañan al formulario de descarga -->
-            <section style="display: inline-block; vertical-align: top;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario académico de descarga de Embarcadero Dev-C++.">
+    <title>Descarga de Dev-C++ | Proyecto académico</title>
+    <link rel="icon" type="image/png" href="img/icono-embarcadero.png">
+</head>
+
+<body style="background-color: #f2f2f2; font-family: Arial, sans-serif;">
+    <header>
+        <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="220"
+                title="Logo-Embarcadero-descarga"></a>
+        <!-- Menú de navegación del sitio -->
+        <nav style="text-align: center; background-color: white; padding: 15px;">
+            <a href="index.html" style="color: #333232;">Inicio</a> |
+            <a href="descarga.html" style="color: #333232;">Descarga</a> |
+            <a href="https://blogs.embarcadero.com/" target="_blank" rel="noopener" style="color: #333232;">Blogs</a> |
+            <a href="https://getitnow.embarcadero.com/" target="_blank" rel="noopener" style="color: #333232;">GetIt</a>
+        </nav>
+    </header>
+    <main style="text-align: center;">
+        <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
+        <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
+        <hr>
+        <!-- Características que acompañan al formulario de descarga -->
+        <section style="display: inline-block; vertical-align: top;
                             width: 30%; min-width: 230px; max-width: 100%;
                             text-align: left;">
 
-                    <h2>Lo que obtienes con Embarcadero Dev-C++</h2>
-                    <ul>
-                        <li>Compilador TDM-GCC para 32 y 64 bits.</li>
-                        <li>Editor con resaltado de sintaxis.</li>
-                        <li>Depuración integrada con GDB.</li>
-                        <li>Administrador de proyectos.</li>
-                        <li>Completado de código.</li>
-                        <li>Creación de bibliotecas estáticas y DLL.</li>
-                    </ul>
-            </section>
-            <!-- Formulario a la derecha -->
-            <section style="display: inline-block; vertical-align: top;
+            <h2>Lo que obtienes con Embarcadero Dev-C++</h2>
+            <ul>
+                <li>Compilador TDM-GCC para 32 y 64 bits.</li>
+                <li>Editor con resaltado de sintaxis.</li>
+                <li>Depuración integrada con GDB.</li>
+                <li>Administrador de proyectos.</li>
+                <li>Completado de código.</li>
+                <li>Creación de bibliotecas estáticas y DLL.</li>
+            </ul>
+        </section>
+        <!-- Formulario a la derecha -->
+        <section style="display: inline-block; vertical-align: top;
                 width: 65%; min-width: 280px; max-width: 100%;
                 text-align: center;">
 
-                <h2 style="text-align: center;"><i>Completa el formulario</i></h2>
+            <h2 style="text-align: center;"><i>Completa el formulario</i></h2>
             <!-- Envío de demostración hacia nuestra misma página -->
             <form action="descarga.html" method="get" style="background-color: white; width: 90%; max-width: 1000px;
                         margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #685f5f;">
 
                 <!-- Columna de campos obligatorios -->
-                <div style="display: inline-block; vertical-align: top; width: 48%; min-width: 230px; max-width: 100%; text-align: left; box-sizing: border-box; padding: 5px;">
-
-
+                <div
+                    style="display: inline-block; vertical-align: top; width: 48%; min-width: 230px; max-width: 100%; text-align: left; box-sizing: border-box; padding: 5px;">
                     <h3>Información obligatoria</h3>
                     <fieldset>
-                    <legend>Datos personales</legend>
-                    <p>
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="nombre"placeholder="Escribe tu nombre" minlength="2" maxlength="50"
-                                pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*" title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
+                        <legend>Datos personales</legend>
+                        <p>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" minlength="2"
+                                maxlength="50" pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
+                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
                                 style="width: 100%; padding: 8px; box-sizing: border-box;" required>
-                    </p>
-                    <p>
-                        <label for="apellido">Apellido:</label><br>
-                        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
-                                minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
-                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres." style="width: 100%; padding: 8px; box-sizing: border-box;" required>
-                    </p>
-                    <p>
-                        <label for="correo">Correo electrónico:</label><br>
-                        <input type="email" id="correo" name="correo"
-                            placeholder="ejemplo@correo.com" style="width: 100%; padding: 8px; box-sizing: border-box;" required>
-                    </p>
-                    <!-- Información de empresa y contacto -->
-                    <p>
-                        <label for="empresa">Empresa o institución:</label><br>
-                        <input type="text" id="empresa" name="empresa" placeholder="Escribe tu empresa o institución" maxlength="100"
-                                style="width: 100%; padding: 8px; box-sizing: border-box;"required>
-                    </p>
-                    <p>
-                        <label for="telefono">Teléfono:</label><br>
-                        <input type="tel" id="telefono" name="telefono"placeholder="Ejemplo: 0991234567" pattern="[0-9]{7,15}"minlength="7" maxlength="15"
-                                title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."style="width: 100%; padding: 8px; box-sizing: border-box;"required>
-                    </p>
-                    <!-- Selección de un país -->
-                    <p>
-                        <label for="pais">País:</label><br>
-                        <select id="pais" name="pais"style="width: 100%; padding: 8px; box-sizing: border-box;" required>
-                            <option value="" selected disabled>Selecciona tu país</option>
-                            <option value="EC">Ecuador</option>
-                            <option value="CO">Colombia</option>
-                            <option value="PE">Perú</option>
-                            <option value="MX">México</option>
-                            <option value="ES">España</option>
-                            <option value="OT">Otro</option>
-                        </select>
-                    </p>
-                </fieldset>
+                        </p>
+                        <p>
+                            <label for="apellido">Apellido:</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
+                                minlength="2" maxlength="50"
+                                pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
+                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <p>
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <!-- Información de empresa y contacto -->
+                        <p>
+                            <label for="empresa">Empresa o institución:</label><br>
+                            <input type="text" id="empresa" name="empresa"
+                                placeholder="Escribe tu empresa o institución" maxlength="100"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 0991234567"
+                                pattern="[0-9]{7,15}" minlength="7" maxlength="15"
+                                title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <!-- Selección de un país -->
+                        <p>
+                            <label for="pais">País:</label><br>
+                            <select id="pais" name="pais" style="width: 100%; padding: 8px; box-sizing: border-box;"
+                                required>
+                                <option value="" selected disabled>Selecciona tu país</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="CO">Colombia</option>
+                                <option value="PE">Perú</option>
+                                <option value="MX">México</option>
+                                <option value="ES">España</option>
+                                <option value="OT">Otro</option>
+                            </select>
+                        </p>
+                    </fieldset>
                 </div>
                 <!-- Columna de campos opcionales -->
                 <div style="display: inline-block; vertical-align: top;
@@ -101,72 +113,76 @@
 
                     <h3>Información opcional</h3>
                     <!-- Una sola opción para el uso principal del programa -->
-                <fieldset style="margin-top: 20px;">
-                    <legend>Uso principal de Dev-C++</legend>
-                    <p>¿Para qué utilizarás el programa?</p>
-                    <p>
-                        <input type="radio" id="uso-estudios" name="uso" value="estudios">
-                        <label for="uso-estudios">Estudios</label><br>
-                        <input type="radio" id="uso-trabajo" name="uso" value="trabajo">
-                        <label for="uso-trabajo">Trabajo</label><br>
-                        <input type="radio" id="uso-personal" name="uso" value="personal">
-                        <label for="uso-personal">Proyectos personales</label>
-                    </p>
-                </fieldset>
-                <!-- Varias opciones para los temas de interés -->
-                <fieldset style="margin-top: 20px;">
-                    <legend>Temas de interés</legend>
-                    <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
-                    <p>
-                        <input type="checkbox" id="interes-c" name="intereses" value="c">
-                        <label for="interes-c">Programación en C</label><br>
-                        <input type="checkbox" id="interes-cpp" name="intereses" value="cpp">
-                        <label for="interes-cpp">Programación en C++</label><br>
-                        <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
-                        <label for="interes-depuracion">Depuración de programas</label>
-                    </p>
-                </fieldset>
-                <!-- Preferencias opcionales para una práctica del programa -->
-                <fieldset style="margin-top: 20px;">
-                    <legend>Preferencias para una práctica</legend>
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Uso principal de Dev-C++</legend>
+                        <p>¿Para qué utilizarás el programa?</p>
+                        <p>
+                            <input type="radio" id="uso-estudios" name="uso" value="estudios">
+                            <label for="uso-estudios">Estudios</label><br>
+                            <input type="radio" id="uso-trabajo" name="uso" value="trabajo">
+                            <label for="uso-trabajo">Trabajo</label><br>
+                            <input type="radio" id="uso-personal" name="uso" value="personal">
+                            <label for="uso-personal">Proyectos personales</label>
+                        </p>
+                    </fieldset>
+                    <!-- Varias opciones para los temas de interés -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Temas de interés</legend>
+                        <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
+                        <p>
+                            <input type="checkbox" id="interes-c" name="intereses" value="c">
+                            <label for="interes-c">Programación en C</label><br>
+                            <input type="checkbox" id="interes-cpp" name="intereses" value="cpp">
+                            <label for="interes-cpp">Programación en C++</label><br>
+                            <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
+                            <label for="interes-depuracion">Depuración de programas</label>
+                        </p>
+                    </fieldset>
+                    <!-- Preferencias opcionales para una práctica del programa -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Preferencias para una práctica</legend>
 
-                    <p>Estos datos son opcionales y no reservan una sesión real.</p>
+                        <p>Estos datos son opcionales y no reservan una sesión real.</p>
 
-                    <p>
-                        <label for="programa">Programa de interés:</label><br>
-                        <input type="text" id="programa" name="programa"value="Embarcadero Dev-C++" readonly style="width: 100%; padding: 8px; box-sizing: border-box;">
-                    </p>
+                        <p>
+                            <label for="programa">Programa de interés:</label><br>
+                            <input type="text" id="programa" name="programa" value="Embarcadero Dev-C++" readonly
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
 
-                    <p>
-                        <label for="fecha-practica">Fecha preferida:</label><br>
-                        <input type="date" id="fecha-practica" name="fecha_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
-                    </p>
+                        <p>
+                            <label for="fecha-practica">Fecha preferida:</label><br>
+                            <input type="date" id="fecha-practica" name="fecha_practica"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
 
-                    <p>
-                        <label for="hora-practica">Hora preferida:</label><br>
-                        <input type="time" id="hora-practica" name="hora_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
-                    </p>
-                </fieldset>
-                <!-- Selección opcional de una captura de un ejercicio -->
-                <fieldset style="margin-top: 20px; width: 100%; box-sizing: border-box; min-width: 0;">
-                    <legend>Archivo de ejemplo</legend>
-                    <p>
-                        <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
-                        <input type="file" id="archivo" name="archivo" style="max-width: 100%; box-sizing: border-box;">
-                    </p>
-                    <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
-                </fieldset>
+                        <p>
+                            <label for="hora-practica">Hora preferida:</label><br>
+                            <input type="time" id="hora-practica" name="hora_practica"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
+                    </fieldset>
+                    <!-- Selección opcional de una captura de un ejercicio -->
+                    <fieldset style="margin-top: 20px; width: 100%; box-sizing: border-box; min-width: 0;">
+                        <legend>Archivo de ejemplo</legend>
+                        <p>
+                            <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
+                            <input type="file" id="archivo" name="archivo"
+                                style="max-width: 100%; box-sizing: border-box;">
+                        </p>
+                        <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
+                    </fieldset>
 
-                <!-- Espacio opcional para consultas o comentarios -->
-                <fieldset style="margin-top: 20px;">
-                    <legend>Comentarios adicionales</legend>
-                    <p>
-                        <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
-                    </p>
+                    <!-- Espacio opcional para consultas o comentarios -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Comentarios adicionales</legend>
+                        <p>
+                            <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
+                        </p>
 
-                    <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
-                            style="width: 100%; "></textarea>
-                </fieldset>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="40" maxlength="500"
+                            placeholder="Escribe aquí tus comentarios" style="width: 100%; "></textarea>
+                    </fieldset>
                 </div>
 
                 <!-- Conserva debajo la explicación del envío y los dos botones -->
@@ -176,16 +192,19 @@
                     No se guardan datos ni se cargan archivos en un servidor.
                 </p>
                 <!-- Enviar el formulario o recuperar sus valores iniciales -->
-                    <p style="text-align: center;">
-                        <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
-                        <input type="reset" value="Restablecer"style="padding: 10px 25px;">
-                    </p>
+                <p style="text-align: center;">
+                    <input type="submit" value="Enviar"
+                        style="background-color: black; color: white; padding: 10px 25px;">
+                    <input type="reset" value="Restablecer" style="padding: 10px 25px;">
+                </p>
             </form>
-            </section>
-        </main>
-        <hr>
-        <footer>
-            <p>Proyecto académico · Fundamentos de Sistemas Web · &copy; 2026</p>
-        </footer>
-    </body>
+        </section>
+    </main>
+    <hr>
+    <footer style="text-align: center; background-color: white; padding: 15px;">
+        <p>Proyecto académico · Fundamentos de Sistemas Web - &copy; 2026</p>
+        <p>Réplica de Embarcadero Dev-C++ con fines educativos.</p>
+    </footer>
+</body>
+
 </html>
