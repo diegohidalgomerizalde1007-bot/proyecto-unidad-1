@@ -39,10 +39,34 @@
                         <input type="email" id="correo" name="correo"
                             placeholder="ejemplo@correo.com" style="width: 100%; padding: 8px; box-sizing: border-box;" required>
                     </p>
+                    <p>
+                        <label for="empresa">Empresa o institución:</label><br>
+                        <input type="text" id="empresa" name="empresa" placeholder="Escribe tu empresa o institución" maxlength="100"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;"required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono"placeholder="Ejemplo: 0991234567" pattern="[0-9]{10}"
+                                title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."style="width: 100%; padding: 8px; box-sizing: border-box;"required>
+                    </p>
+
+                    <p>
+                        <label for="pais">País:</label><br>
+                        <select id="pais" name="pais"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                            <option value="" selected disabled>Selecciona tu país</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="CO">Colombia</option>
+                            <option value="PE">Perú</option>
+                            <option value="MX">México</option>
+                            <option value="ES">España</option>
+                            <option value="OT">Otro</option>
+                        </select>
+                    </p>
                 </fieldset>
-                <p style="text-align: center;">
-                    <input type="submit" value="Enviar" style="background-color: #333333; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">
-    </p>
+                    <p style="text-align: center;">
+                        <input type="submit" value="Enviar" style="background-color: #333333; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">
+                    </p>
             </form>
         </main>
         <hr>
