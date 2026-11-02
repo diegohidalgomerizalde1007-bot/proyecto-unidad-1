@@ -19,6 +19,20 @@
         <main>
             <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
             <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
+            <!-- Características que acompañan al formulario de descarga -->
+                <section>
+                    <h2>Lo que obtines con Embarcadero Dev-C++</h2>
+                    <ul>
+                        <li>Compilador TDM-GCC para 32 y 64 bits.</li>
+                        <li>Editor con resaltado de sintaxis.</li>
+                        <li>Depuración integrada con GDB.</li>
+                        <li>Administrador de proyectos.</li>
+                        <li>Completado de código.</li>
+                        <li>Creación de bibliotecas estáticas y DLL.</li>
+                    </ul>
+                </section>
+            <section>
+                <h2 style="text-align: center;">Completa el formulario</h2>
             <!-- Formulario centrado con espacio alrededor -->
             <form style="background-color: white; width: 90%; max-width: 450px; margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #cccccc; border-radius: 8px;">
                 <fieldset>
@@ -66,78 +80,79 @@
                     </p>
                 </fieldset>
         <!-- Una sola opción para el uso principal del programa -->
-        <fieldset style="margin-top: 20px;">
-            <legend>Uso principal de Dev-C++</legend>
-            <p>¿Para qué utilizarás el programa?</p>
-            <p>
-                <input type="radio" id="uso-estudios"name="uso" value="estudios" required>
-                <label for="uso-estudios">Estudios</label><br>
-                <input type="radio" id="uso-trabajo"name="uso" value="trabajo" required>
-                <label for="uso-trabajo">Trabajo</label><br>
-                <input type="radio" id="uso-personal"name="uso" value="personal" required>
-                <label for="uso-personal">Proyectos personales</label>
-            </p>
-        </fieldset>
-        <!-- Varias opciones para los temas de interés -->
-        <fieldset style="margin-top: 20px;">
-            <legend>Temas de interés</legend>
-            <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
-            <p>
-                <input type="checkbox" id="interes-c"name="intereses" value="c">
-                <label for="interes-c">Programación en C</label><br>
-                <input type="checkbox" id="interes-cpp"name="intereses" value="cpp">
-                <label for="interes-cpp">Programación en C++</label><br>
-                <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
-                <label for="interes-depuracion">Depuración de programas</label>
-            </p>
-        </fieldset>
-        <!-- Preferencias opcionales para una práctica del programa -->
-        <fieldset style="margin-top: 20px;">
-            <legend>Preferencias para una práctica</legend>
+                <fieldset style="margin-top: 20px;">
+                    <legend>Uso principal de Dev-C++</legend>
+                    <p>¿Para qué utilizarás el programa?</p>
+                    <p>
+                        <input type="radio" id="uso-estudios"name="uso" value="estudios" required>
+                        <label for="uso-estudios">Estudios</label><br>
+                        <input type="radio" id="uso-trabajo"name="uso" value="trabajo" required>
+                        <label for="uso-trabajo">Trabajo</label><br>
+                        <input type="radio" id="uso-personal"name="uso" value="personal" required>
+                        <label for="uso-personal">Proyectos personales</label>
+                    </p>
+                </fieldset>
+                <!-- Varias opciones para los temas de interés -->
+                <fieldset style="margin-top: 20px;">
+                    <legend>Temas de interés</legend>
+                    <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
+                    <p>
+                        <input type="checkbox" id="interes-c"name="intereses" value="c">
+                        <label for="interes-c">Programación en C</label><br>
+                        <input type="checkbox" id="interes-cpp"name="intereses" value="cpp">
+                        <label for="interes-cpp">Programación en C++</label><br>
+                        <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
+                        <label for="interes-depuracion">Depuración de programas</label>
+                    </p>
+                </fieldset>
+                <!-- Preferencias opcionales para una práctica del programa -->
+                <fieldset style="margin-top: 20px;">
+                    <legend>Preferencias para una práctica</legend>
 
-            <p>Estos datos son opcionales y no reservan una sesión real.</p>
+                    <p>Estos datos son opcionales y no reservan una sesión real.</p>
 
-            <p>
-                <label for="programa">Programa de interés:</label><br>
-                <input type="text" id="programa" name="programa"value="Embarcadero Dev-C++" readonly style="width: 100%; padding: 8px; box-sizing: border-box;">
-            </p>
+                    <p>
+                        <label for="programa">Programa de interés:</label><br>
+                        <input type="text" id="programa" name="programa"value="Embarcadero Dev-C++" readonly style="width: 100%; padding: 8px; box-sizing: border-box;">
+                    </p>
 
-            <p>
-                <label for="fecha-practica">Fecha preferida:</label><br>
-                <input type="date" id="fecha-practica" name="fecha_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
-            </p>
+                    <p>
+                        <label for="fecha-practica">Fecha preferida:</label><br>
+                        <input type="date" id="fecha-practica" name="fecha_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
+                    </p>
 
-            <p>
-                <label for="hora-practica">Hora preferida:</label><br>
-                <input type="time" id="hora-practica" name="hora_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
-            </p>
-        </fieldset>
-        <!-- Selección opcional de una captura de un ejercicio -->
-        <fieldset style="margin-top: 20px;">
-            <legend>Archivo de ejemplo</legend>
-            <p>
-                <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
-                <input type="file" id="archivo" name="archivo">
-            </p>
+                    <p>
+                        <label for="hora-practica">Hora preferida:</label><br>
+                        <input type="time" id="hora-practica" name="hora_practica" style="width: 100%; padding: 8px; box-sizing: border-box;">
+                    </p>
+                </fieldset>
+                <!-- Selección opcional de una captura de un ejercicio -->
+                <fieldset style="margin-top: 20px;">
+                    <legend>Archivo de ejemplo</legend>
+                    <p>
+                        <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
+                        <input type="file" id="archivo" name="archivo">
+                    </p>
 
-            <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
-        </fieldset>
-        <!-- Espacio opcional para consultas o comentarios -->
-        <fieldset style="margin-top: 20px;">
-            <legend>Comentarios adicionales</legend>
-            <p>
-                <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
-            </p>
+                    <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
+                </fieldset>
+                <!-- Espacio opcional para consultas o comentarios -->
+                <fieldset style="margin-top: 20px;">
+                    <legend>Comentarios adicionales</legend>
+                    <p>
+                        <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
+                    </p>
 
-            <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
-                    style="width: 100%; "></textarea>
-        <!-- Enviar el formulario o recuperar sus valores iniciales -->
-        </fieldset>
-            <p style="text-align: center;">
-                <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
-                <input type="reset" value="Restablecer"style="padding: 10px 25px;">
-            </p>
+                    <textarea id="comentarios" name="comentarios"rows="5" cols="40" maxlength="500"placeholder="Escribe aquí tus comentarios"
+                            style="width: 100%; "></textarea>
+                <!-- Enviar el formulario o recuperar sus valores iniciales -->
+                </fieldset>
+                    <p style="text-align: center;">
+                        <input type="submit" value="Enviar"style="background-color: black; color: white; padding: 10px 25px;">
+                        <input type="reset" value="Restablecer"style="padding: 10px 25px;">
+                    </p>
             </form>
+            </section>
         </main>
         <hr>
         <footer>
