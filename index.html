@@ -10,7 +10,10 @@
 </head>
 
 <body style="background-color: #f2f2f2; font-family: Arial, sans-serif;">
-    <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="220" title="Logo-Embarcadero"></a>
+    <!-- Logotipo del sitio -->
+    <div>
+        <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="220"
+                title="Logo-Embarcadero"></a>
     </div>
 
     <nav style="text-align: center; background-color: white; padding: 15px;">
@@ -37,17 +40,22 @@
         <section>
             <h2>¿Qué es Embarcadero Dev-C++?</h2>
             <p>
-                Embarcadero Dev-C++ es un <strong>entorno de desarrollo integrado (IDE)</strong>
-                para programar en <strong>C y C++</strong>.
+                Embarcadero Dev-C++ es un <b>entorno de desarrollo integrado (IDE)</b>
+                para programar en <b>C y C++</b>.
                 Reúne herramientas para escribir, compilar y depurar código.
             </p>
             <p>
                 Es una versión mejorada de Bloodshed Dev-C++ y Orwell Dev-C++.
                 Utiliza MinGW/GCC como compilador y está desarrollado con Embarcadero Delphi.
             </p>
+            <p>
+                También puede utilizarse con Cygwin u otros compiladores basados en GCC.
+                Al ser una aplicación nativa de Windows, tiene un consumo reducido
+                de memoria.
+            </p>
             <figure>
                 <img src="img/captura-devcpp.png" alt="Ventana de Dev-C++ con el editor de código y sus herramientas"
-                    width="700" title="Captura-Dev-C++" sytel="max-width: 100%; height: auto;">
+                    width="700" title="Captura-Dev-C++" style="max-width: 100%; height: auto;">
                 <figcaption>
                     Entorno de desarrollo Embarcadero Dev-C++
                 </figcaption>
@@ -73,6 +81,29 @@
                 <li>Administrador de herramientas y extensiones Devpak.</li>
                 <li>Impresión, búsqueda y reemplazo de texto.</li>
             </ul>
+        </section>
+        <!-- Pasos y conceptos para comenzar -->
+        <section>
+            <h2>¿Cómo comenzar a programar?</h2>
+            <ol>
+                <li>Instalar y abrir Embarcadero Dev-C++.</li>
+                <li>Crear un archivo fuente o un proyecto de C o C++.</li>
+                <li>Escribir y guardar el código.</li>
+                <li>Compilar y corregir los errores indicados.</li>
+                <li>Ejecutar el programa y comprobar su resultado.</li>
+            </ol>
+
+            <h3>Conceptos básicos</h3>
+            <dl>
+                <dt><b>IDE</b></dt>
+                <dd>Entorno que reúne herramientas para desarrollar programas.</dd>
+
+                <dt><b>Compilador</b></dt>
+                <dd>Traduce el código fuente para producir código ejecutable.</dd>
+
+                <dt><b>Depurador</b></dt>
+                <dd>Permite seguir la ejecución para investigar errores.</dd>
+            </dl>
         </section>
         <!-- Tabla de compatibilidad -->
         <section>
@@ -109,6 +140,60 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <!-- Funcionamiento del entorno Dev-C++ -->
+        <section>
+            <h2>¿Cómo funciona Embarcadero Dev-C++?</h2>
+            <p>
+                Dev-C++ reúne herramientas para escribir, compilar, ejecutar
+                y depurar programas en C y C++ desde un mismo entorno.
+            </p>
+
+            <h3>Del código al programa</h3>
+            <ol>
+                <li>
+                    <b>Escribir:</b> crear el código fuente en el editor.
+                    El resaltado de sintaxis ayuda a distinguir sus elementos.
+                </li>
+                <li>
+                    <b>Guardar:</b> almacenar el archivo con la extensión
+                    correspondiente, como .cpp para un archivo de C++.
+                </li>
+                <li>
+                    <b>Compilar:</b> utilizar el compilador para traducir
+                    el código. Si encuentra errores, revisar los mensajes y corregirlos.
+                </li>
+                <li>
+                    <b>Ejecutar:</b> iniciar el programa generado
+                    y comprobar sus resultados.
+                </li>
+                <li>
+                    <b>Depurar:</b> investigar el comportamiento del programa
+                    para localizar problemas en su funcionamiento.
+                </li>
+            </ol>
+
+            <h3>Herramientas del entorno</h3>
+            <dl>
+                <dt><b>Editor de código</b></dt>
+                <dd>Permite escribir y modificar las instrucciones del programa.</dd>
+
+                <dt><b>Compilador</b></dt>
+                <dd>Traduce el código fuente como parte de la generación del ejecutable.</dd>
+
+                <dt><b>Depurador</b></dt>
+                <dd>Permite seguir la ejecución e inspeccionar valores para investigar errores.</dd>
+
+                <dt><b>Administrador de proyectos</b></dt>
+                <dd>Organiza los archivos que forman parte de un programa.</dd>
+            </dl>
+
+            <h3>Compilar no garantiza un resultado correcto</h3>
+            <p>
+                Un programa puede compilar y aun así producir resultados equivocados.
+                Por eso es necesario ejecutarlo con diferentes datos y comprobar
+                que responde como se espera.
+            </p>
         </section>
     </main>
 
