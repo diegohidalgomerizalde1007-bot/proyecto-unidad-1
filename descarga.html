@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Configura los metadatos y el icono de la página de descarga. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario académico de descarga de Embarcadero Dev-C++.">
+    <title>Descarga de Dev-C++ | Proyecto académico</title>
+    <link rel="icon" type="image/png" href="img/icono-embarcadero.png">
+</head>
+
+<body style="background-color: #f2f2f2; font-family: Arial, sans-serif;">
+    <header>
+        <a href="index.html"><img src="img/logo-embarcadero.png" alt="Embarcadero" width="220"
+                title="Logo-Embarcadero-descarga"></a>
+        <!-- Mantiene las mismas opciones de navegación que la página de inicio. -->
+        <nav style="text-align: center; background-color: white; padding: 15px;">
+            <a href="index.html" style="color: #333232;">Inicio</a> |
+            <a href="descarga.html" style="color: #333232;">Descarga</a> |
+            <a href="https://blogs.embarcadero.com/" target="_blank" rel="noopener" style="color: #333232;">Blogs</a> |
+            <a href="https://getitnow.embarcadero.com/" target="_blank" rel="noopener" style="color: #333232;">GetIt</a>
+        </nav>
+    </header>
+    <main style="text-align: center;">
+        <h1 style="text-align: center;">Descargar Embarcadero Dev-C++</h1>
+        <p style="text-align: center">Un IDE C/C++ para Windows rápido, portátil, simple y gratuito</p>
+        <hr>
+        <!-- Agrupa características y multimedia a la izquierda mediante inline-block. -->
+        <section
+            style="display: inline-block; vertical-align: top; width: 30%; min-width: 230px; max-width: 100%; text-align: left;">
+
+            <h2>Lo que obtienes con Embarcadero Dev-C++</h2>
+            <ul>
+                <li>Compilador TDM-GCC 9.2.0 para 32 y 64 bits.</li>
+                <li>Compatibilidad con compiladores basados en GCC.</li>
+                <li>Depuración integrada con GDB.</li>
+                <li>Análisis de rendimiento con GPROF.</li>
+                <li>Administrador de proyectos.</li>
+                <li>Resaltado de sintaxis personalizable.</li>
+                <li>Navegador de clases y lista de funciones.</li>
+                <li>Completado de código.</li>
+                <li>Formato de código con AStyle.</li>
+                <li>Creación de bibliotecas estáticas y DLL.</li>
+                <li>Plantillas para crear proyectos.</li>
+                <li>Creación de archivos Makefile.</li>
+                <li>Compilación de archivos de recursos.</li>
+                <li>Administrador de herramientas y extensiones Devpak.</li>
+                <li>Impresión, búsqueda y reemplazo de texto.</li>
+            </ul>
+
+            <!-- Video y audio de introducción -->
+            <section>
+                <h3>Conoce Dev-C++ en multimedia</h3>
+                <!-- Reproduce el video local con controles y lo ajusta al ancho de la columna. -->
+                <h4>Demostración del programa</h4>
+                <video controls width="700" style="max-width: 100%; height: auto;">
+                    <source src="video/demo-devcpp.mp4" type="video/mp4">
+                    Tu navegador no admite la reproducción de este video.
+                </video>
+                <p>Demostración de las herramientas básicas del entorno.</p>
+                <!-- Permite escuchar el archivo de audio local mediante controles de reproducción. -->
+                <h4>Introducción en audio - Ejemplo Presentación</h4>
+                <audio controls style="max-width: 100%;">
+                    <source src="audio/introduccion-devcpp.mp3" type="audio/mpeg">
+                    Tu navegador no admite la reproducción de este audio.
+                </audio>
+                <p>
+                    Dev-C++ reúne un editor, un compilador y herramientas
+                    de depuración para desarrollar programas en C y C++.
+                </p>
+                <!-- Inserta el reproductor externo de YouTube y requiere conexión a Internet. -->
+                <h4>Video de YouTube</h4>
+                <iframe src="https://www.youtube.com/embed/_w06sxPc68M" title="Video de Dev-C++ en YouTube" width="560"
+                    height="315" style="max-width: 100%; border: none;" allowfullscreen></iframe>
+                <p>
+                    <a href="https://youtu.be/_w06sxPc68M" target="_blank" rel="noopener">
+                        Ver el video directamente en YouTube
+                    </a>
+                </p>
+            </section>
+        </section>
+
+        <!-- Coloca el formulario a la derecha y lo alinea con el inicio de la columna izquierda. -->
+        <section style="display: inline-block; vertical-align: top;
+                width: 65%; min-width: 280px; max-width: 100%;
+                text-align: center;">
+
+            <h2 style="text-align: center;"><i>Completa el formulario</i></h2>
+            <!-- GET envía los campos con name a esta página mediante la URL, sin almacenarlos. -->
+            <form action="descarga.html" method="get" style="background-color: white; width: 90%; max-width: 1000px;
+                        margin: 30px auto; padding: 20px; box-sizing: border-box; border: 1px solid #685f5f;">
+
+                <!-- Agrupa los campos que deben completarse porque utilizan required. -->
+                <div
+                    style="display: inline-block; vertical-align: top; width: 48%; min-width: 230px; max-width: 100%; text-align: left; box-sizing: border-box; padding: 5px;">
+                    <h3>Información obligatoria</h3>
+                    <fieldset>
+                        <!-- for enlaza la etiqueta con el id y pattern restringe los caracteres del nombre. -->
+                        <legend>Datos personales</legend>
+                        <p>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" minlength="2"
+                                maxlength="50" pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
+                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <p>
+                            <label for="apellido">Apellido:</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
+                                minlength="2" maxlength="50"
+                                pattern="[A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+( [A-Za-zÁÉÍÓÚÜáéíóúüÑñ]+)*"
+                                title="Solo letras y espacios entre palabras, mínimo 2 caracteres."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <p>
+                            <label for="correo">Correo electrónico:</label><br>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <!-- Información de empresa y contacto -->
+                        <p>
+                            <label for="empresa">Empresa o institución:</label><br>
+                            <input type="text" id="empresa" name="empresa"
+                                placeholder="Escribe tu empresa o institución" maxlength="100"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <!-- Restringe el teléfono a entre 7 y 15 dígitos, sin espacios ni símbolos. -->
+                        <p>
+                            <label for="telefono">Teléfono:</label><br>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 0991234567"
+                                pattern="[0-9]{7,15}" minlength="7" maxlength="15"
+                                title="Escribe entre 7 y 15 dígitos, sin espacios ni símbolos."
+                                style="width: 100%; padding: 8px; box-sizing: border-box;" required>
+                        </p>
+                        <!-- La opción inicial vacía obliga a elegir un país antes del envío. -->
+                        <p>
+                            <label for="pais">País:</label><br>
+                            <select id="pais" name="pais" style="width: 100%; padding: 8px; box-sizing: border-box;"
+                                required>
+                                <option value="" selected disabled>Selecciona tu país</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="CO">Colombia</option>
+                                <option value="PE">Perú</option>
+                                <option value="MX">México</option>
+                                <option value="ES">España</option>
+                                <option value="OT">Otro</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                </div>
+                <!-- Agrupa los controles sin required para permitir que queden sin completar. -->
+                <div
+                    style="display: inline-block; vertical-align: top; width: 48%; min-width: 230px; max-width: 100%; text-align: left; box-sizing: border-box; padding: 5px;">
+
+                    <h3>Información opcional</h3>
+                    <!-- Los radios comparten name para permitir una sola elección en el grupo. -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Uso principal de Dev-C++</legend>
+                        <p>¿Para qué utilizarás el programa?</p>
+                        <p>
+                            <input type="radio" id="uso-estudios" name="uso" value="estudios">
+                            <label for="uso-estudios">Estudios</label><br>
+                            <input type="radio" id="uso-trabajo" name="uso" value="trabajo">
+                            <label for="uso-trabajo">Trabajo</label><br>
+                            <input type="radio" id="uso-personal" name="uso" value="personal">
+                            <label for="uso-personal">Proyectos personales</label>
+                        </p>
+                    </fieldset>
+                    <!-- Las casillas permiten seleccionar varios intereses de forma independiente. -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Temas de interés</legend>
+                        <p>Puedes seleccionar varios temas o dejar este apartado vacío.</p>
+                        <p>
+                            <input type="checkbox" id="interes-c" name="intereses" value="c">
+                            <label for="interes-c">Programación en C</label><br>
+                            <input type="checkbox" id="interes-cpp" name="intereses" value="cpp">
+                            <label for="interes-cpp">Programación en C++</label><br>
+                            <input type="checkbox" id="interes-depuracion" name="intereses" value="depuracion">
+                            <label for="interes-depuracion">Depuración de programas</label>
+                        </p>
+                    </fieldset>
+                    <!-- Recoge fecha y hora opcionales y muestra el programa como texto de solo lectura. -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Preferencias para una práctica</legend>
+                        <p>Estos datos son opcionales y no reservan una sesión real.</p>
+                        <p>
+                            <label for="programa">Programa de interés:</label><br>
+                            <input type="text" id="programa" name="programa" value="Embarcadero Dev-C++" readonly
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
+
+                        <p>
+                            <label for="fecha-practica">Fecha preferida:</label><br>
+                            <input type="date" id="fecha-practica" name="fecha_practica"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
+
+                        <p>
+                            <label for="hora-practica">Hora preferida:</label><br>
+                            <input type="time" id="hora-practica" name="hora_practica"
+                                style="width: 100%; padding: 8px; box-sizing: border-box;">
+                        </p>
+                    </fieldset>
+                    <!-- Permite seleccionar un archivo local, pero esta demostración no lo sube al servidor. -->
+                    <fieldset style="margin-top: 20px; width: 100%; box-sizing: border-box; min-width: 0;">
+                        <legend>Archivo de ejemplo</legend>
+                        <p>
+                            <label for="archivo">Selecciona una captura de tu ejercicio:</label><br>
+                            <input type="file" id="archivo" name="archivo"
+                                style="max-width: 100%; box-sizing: border-box;">
+                        </p>
+                        <p>Campo opcional de práctica. El archivo no se guarda en un servidor.</p>
+                    </fieldset>
+
+                    <!-- Espacio opcional para consultas o comentarios -->
+                    <fieldset style="margin-top: 20px;">
+                        <legend>Comentarios adicionales</legend>
+                        <p>
+                            <label for="comentarios">¿Qué te gustaría aprender con Dev-C++?</label>
+                        </p>
+                        <!-- textarea permite escribir varias líneas con un límite de 500 caracteres. -->
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="40" maxlength="500"
+                            placeholder="Escribe aquí tus comentarios"
+                            style="width: 100%; padding: 8px; box-sizing: border-box;"></textarea>
+                    </fieldset>
+                </div>
+
+                <!-- Aclara al usuario el alcance del formulario de demostración. -->
+                <p>
+                    Formulario de demostración: al enviar se comprobarán los campos
+                    y se abrirá nuevamente esta página con los datos en la dirección.
+                    No se guardan datos ni se cargan archivos en un servidor.
+                </p>
+                <!-- Enviar activa la validación y Restablecer recupera los valores iniciales. -->
+                <p style=" text-align: center;">
+                    <input type="submit" value="Enviar"
+                        style="background-color: black; color: white; padding: 10px 25px;">
+                    <input type="reset" value="Restablecer" style="padding: 10px 25px;">
+                </p>
+            </form>
+        </section>
+
+    </main>
+    <hr>
+    <!-- Conserva el mismo cierre informativo que la página principal. -->
+    <footer style="text-align: center; background-color: white; padding: 15px;">
+        <p>Proyecto académico · Fundamentos de Sistemas Web - &copy; 2026</p>
+        <p>Réplica de Embarcadero Dev-C++ con fines educativos.</p>
+    </footer>
+</body>
+
+</html>
